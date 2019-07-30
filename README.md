@@ -140,7 +140,7 @@ sender.flush().expect("failed to flush stdout");
 
 ###
 
-Finishes Simple Example
+Simple Example
 
 https://github.com/silathdiir/port_exs
 
