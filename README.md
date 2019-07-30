@@ -137,6 +137,6 @@ Other complicated ones
 
 `https://github.com/silathdiir/port_exs/fancy_ex`
 
-1. Elixir 通过 Port 调用 C 进程 - 使用文件 File Descriptor
-2. Elixir 通过 Port 调用 Python 进程 - 使用 `mmap` File Descriptor
+1. Elixir 通过 Port 调用 C 进程
+2. Elixir 通过 Port 调用 Python 进程
 
