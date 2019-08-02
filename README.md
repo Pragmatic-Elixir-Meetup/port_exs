@@ -10,10 +10,9 @@ steven.gu@letote.cn
 
 自我介绍
 
-1. 当前的Letote 的 Rails Coder
-2. 参与过 Letote 的 Elixir 和 Python 项目开发
-3. 最近从嵌入式学习 Rust
-4. Linux C/C++ Coder
+1. Letote 的 Rails Coder
+2. 参与过 Letote 的 Elixir 项目开发
+3. 学习 Rust 的嵌入式应用
 
 ###
 
@@ -140,7 +139,7 @@ sender.flush().expect("failed to flush stdout");
 
 ###
 
-Finishes Simple Example
+Simple Example
 
 https://github.com/silathdiir/port_exs
 
