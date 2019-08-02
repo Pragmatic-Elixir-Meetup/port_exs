@@ -3,8 +3,17 @@
 
 Elixir 通过 Port 调用 Rust 进程
 
-Steven Gu - Rails
+Steven Gu
 steven.gu@letote.cn
+
+###
+
+自我介绍
+
+1. 当前的Letote 的 Rails Coder
+2. 参与过 Letote 的 Elixir 和 Python 项目开发
+3. 最近从嵌入式学习 Rust
+4. Linux C/C++ Coder
 
 ###
 
@@ -35,7 +44,7 @@ Letote 应用
 
 1. 实验尝试
 2. C 的结构化封装有难度（glibc，ffmpeg），C++ 成本高
-3. Rust 友好的编译期内存检测
+3. Rust 友好安全的编译期内存检测
 4. Cargo 工具链针对多平台 Targets 的支持，省去了 C Makefile 的复杂度
 
 ###
@@ -129,14 +138,9 @@ sender.write_all(&encoded_data).expect("failed to write data");
 sender.flush().expect("failed to flush stdout");
 ```
 
-Finishes Simple Example
-
 ###
 
-Other complicated ones
+Finishes Simple Example
 
-`https://github.com/silathdiir/port_exs/fancy_ex`
-
-1. Elixir 通过 Port 调用 C 进程
-2. Elixir 通过 Port 调用 Python 进程
+https://github.com/silathdiir/port_exs
 
