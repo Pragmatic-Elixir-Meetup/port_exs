@@ -20,7 +20,7 @@
 </style>
 
 		<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="mPuoHpc6SUBNiyJRMhIqz/Gpnpr7Ebhxczt87THqbsq88zJfjDEJlbUfZDDPMOXM63tKahX907p1DiC7Et/B5g==" />
+<meta name="csrf-token" content="RaOfd5ML7mIvNbUQ4fGFrB+3nHSujXTAoCUVUiG+l6LfE4ou6v3JWAIORiFp7OgwfJvaviBXCQmeLNN3kKC8YA==" />
 		<style id="user-css-output" type="text/css"></style>
 	</head>
 	<body>
@@ -30,8 +30,17 @@
 <h1>Elixir 通过 Port 调用 Rust 进程</h1>
 </div></div>
 <div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 420px; height: auto;" data-block-id="8e8789a07b7c33450494af2916b86463"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;">
-<h2>Steven Gu - Rails<br>
+<h2>Steven Gu<br>
 steven.gu@letote.cn</h2>
+</div></div></section><section data-id="61e484fb35fe20f61ab05ced95fd2b4b"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 189px; height: auto;" data-block-id="3c1aa57ae1d1d59d17cc33392cf2d572"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>自我介绍</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 350px; height: auto;" data-block-id="496539c796a3f2d1be579118686b5d4a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>Letote 的 Rails Coder</li>
+	<li>参与过 Letote 的 Elixir 项目开发</li>
+	<li>学习 Rust 的嵌入式应用</li>
+</ul>
 </div></div></section><section data-id="8f23a8b2bb406204dc8374dcc03da081"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 189px; height: auto;" data-block-id="69c30c4ee2fb84e3609969c54166111e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
 <h2>NIF 和 Port</h2>
 </div></div>
@@ -135,7 +144,7 @@ sender.write_all(&amp;encoded_data).expect("failed to write data");
 sender.flush().expect("failed to flush stdout");</code></pre></div></div></section><section data-id="998ff654ef899a15d117c9c3646fbe08"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 140px; height: auto;" data-block-id="6c0cc106e40f275b0bff565d2edc415d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
 <h2>Rust Part</h2>
 </div></div>
-<div class="sl-block" data-block-type="code" style="width: 712px; height: 213px; left: 124px; top: 277px;" data-block-id="80269327d35e07502245cfa1de742c3b"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre><code data-line-numbers="">let mut sender = io::stdout();
+<div class="sl-block" data-block-type="code" style="width: 712px; height: 213px; left: 124px; top: 280px;" data-block-id="80269327d35e07502245cfa1de742c3b"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre><code data-line-numbers="">let mut sender = io::stdout();
 
 sender.
   write_u16::&lt;BigEndian&gt;(encoded_data.len() as u16).
@@ -144,15 +153,18 @@ sender.
 sender.write_all(&amp;encoded_data).expect("failed to write data");
 
 sender.flush().expect("failed to flush stdout");</code></pre></div></div>
-<div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 560px; height: auto;" data-block-id="8dbef9e03f2911ae9aff6ef2a194bb07"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 13;">
-<h2>Finishes Simple Example</h2>
+</section><section data-id="0573054911e715cb2c8d614bb6ceb0aa"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 189px; height: auto;" data-block-id="1ba78c380293d41dd02f60f6193ae12a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Simple Example</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 420px; height: auto;" data-block-id="72a93fd4b587d13be49b34f996cf3d8c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;">
+<h3>https://github.com/silathdiir/port_exs</h3>
 </div></div></section>
 			</div>
 		</div>
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":1103702,"username":"asongala","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/4f91a6e14c54cf5a1999a4e1d7b2ddc7?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":3604814,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"speaker_theme":null,"phone_number":null,"phone_country_code":null,"media_sources":null,"export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null},"email":"asongala@163.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":0,"storage_limit":262144000},"deck":{"id":1568260,"slug":"deck","title":"deck","description":"","width":960,"height":700,"visibility":"all","published_at":"2019-07-30T09:35:54.048Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/edfda4f375a757da9f33b56a1e2985d0/thumb.jpg?1564479383","view_count":0,"user":{"id":1103702,"username":"asongala","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/4f91a6e14c54cf5a1999a4e1d7b2ddc7?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":3604814,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":12,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":null,"data_updated_at":1564480134691,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":null,"notes":{}},"user":{"id":1103702,"username":"asongala","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/4f91a6e14c54cf5a1999a4e1d7b2ddc7?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":3604814,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
+	var SLConfig = {"current_user":{"id":1103702,"username":"asongala","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/4f91a6e14c54cf5a1999a4e1d7b2ddc7?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":3604814,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_grid_on_top":false,"editor_snap":true,"editor_fixed_notes":false,"developer_mode":false,"speaker_layout":null,"speaker_theme":null,"phone_number":null,"phone_country_code":null,"media_sources":null,"export_controls":null,"export_slide_number":null,"export_slide_notes":null,"export_separate_fragments":null},"email":"asongala@163.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":null,"storage_used":0,"storage_limit":262144000},"deck":{"id":1568260,"slug":"deck","title":"deck","description":"","width":960,"height":700,"visibility":"all","published_at":"2019-07-30T09:35:54.048Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/edfda4f375a757da9f33b56a1e2985d0/thumb.jpg?1564712615","view_count":0,"user":{"id":1103702,"username":"asongala","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/4f91a6e14c54cf5a1999a4e1d7b2ddc7?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":3604814,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":14,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":null,"data_updated_at":1564724505947,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":null,"notes":{}},"user":{"id":1103702,"username":"asongala","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/4f91a6e14c54cf5a1999a4e1d7b2ddc7?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":3604814,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
 </script>
 
 		<script>
