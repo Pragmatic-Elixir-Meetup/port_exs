@@ -4,6 +4,10 @@ version = "0.1.0"
 authors = ["Steven Gu <steven.gu@letote.cn>"]
 edition = "2018"
 
+[[bin]]
+name = "rust_ex"
+path = "src/rust_ex.rs"
+
 [dependencies]
 byteorder = "1"
 eetf = "0.4"

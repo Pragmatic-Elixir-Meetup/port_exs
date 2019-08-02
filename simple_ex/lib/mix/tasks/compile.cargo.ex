@@ -19,7 +19,7 @@ defmodule Mix.Tasks.Compile.Cargo do
     [
       "build",
       "--bin",
-      "simple_ex",
+      "rust_ex",
       "--release",
       "--target-dir",
       priv_path()
